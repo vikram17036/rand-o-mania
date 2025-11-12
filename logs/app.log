@@ -1,0 +1,72 @@
+[2025-11-12 16:26:59] INFO     [app.routes.api] [Request f79674f4] Request received - prompt: Generate a random number.  If the number is less than 0.5, multiply it by 0.1234567, otherwise divid...
+[2025-11-12 16:26:59] INFO     [app.routes.api] [Request f79674f4] Starting OpenAI parsing...
+[2025-11-12 16:27:07] INFO     [app.services.openai_service] OpenAI API call completed in 7.832s
+[2025-11-12 16:27:07] INFO     [app.services.openai_service] Successfully parsed 5 operations from OpenAI response
+[2025-11-12 16:27:07] INFO     [app.routes.api] [Request f79674f4] OpenAI parsing completed in 7.847s - operations count: 5
+[2025-11-12 16:27:07] INFO     [app.routes.api] [Request f79674f4] Starting execution engine with 5 operations
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Operation generate_random
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Generated random number: 0.4989476163
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Operation conditional
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Number 0.4989476163 is less than 0.5, so executing if_true branch
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Operation multiply
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Multiplying 0.4989476163 by 0.1234567
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Multiply: 0.4989476163 * 0.1234567 = 0.0615984262
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Execution completed - result: 0.0615984262, variables: {'r1': 0.4989476163, 'prev_result': 0.0615984262}, random_numbers: [0.4989476163]
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Operation generate_random
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Generated random number: 0.9457856377
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Operation square_root
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Getting square root of 0.9457856377
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Square root: sqrt(0.9457856377) = 0.9725151092
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Operation multiply
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Multiplying 0.9725151092 by 0.0615984262
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Multiply: 0.9725151092 * 0.0615984262 = 0.0599054002
+[2025-11-12 16:27:07] INFO     [app.services.execution_engine] Execution completed - result: 0.0599054002, variables: {'r1': 0.4989476163, 'prev_result': 0.0615984262, 'r2': 0.9457856377, 'sqrt_r2': 0.9725151092, 'final_result': 0.0599054002}, random_numbers: [0.4989476163, 0.9457856377]
+[2025-11-12 16:27:07] INFO     [app.routes.api] [Request f79674f4] Execution completed in 0.008s - final result: 0.0599054002
+[2025-11-12 16:27:07] INFO     [app.routes.api] [Request f79674f4] Response sent - result: 0.0599054002, random_numbers: [0.4989476163, 0.9457856377], total_duration: 7.856s
+[2025-11-12 16:30:56] INFO     [app.routes.api] [Request 2c7337f4] Request received - prompt: Generate a random number.  If the number is less than 0.5, multiply it by 0.1234567, otherwise divid...
+[2025-11-12 16:30:56] INFO     [app.routes.api] [Request 2c7337f4] Starting OpenAI parsing...
+[2025-11-12 16:31:02] INFO     [app.services.openai_service] OpenAI API call completed in 6.383s
+[2025-11-12 16:31:02] INFO     [app.services.openai_service] Successfully parsed 4 operations from OpenAI response
+[2025-11-12 16:31:02] INFO     [app.routes.api] [Request 2c7337f4] OpenAI parsing completed in 6.388s - operations count: 4
+[2025-11-12 16:31:02] INFO     [app.routes.api] [Request 2c7337f4] Starting execution engine with 4 operations
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Operation generate_random
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Generated random number: 0.2777485234
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Operation conditional
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Number 0.2777485234 is less than 0.5, so executing if_true branch
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Operation multiply
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Multiplying 0.2777485234 by 0.1234567
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Multiply: 0.2777485234 * 0.1234567 = 0.0342899161
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Execution completed - result: 0.0342899161, variables: {'r1': 0.2777485234, 'result1': 0.0342899161}, random_numbers: [0.2777485234]
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Operation generate_random
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Generated random number: 0.325484024
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Operation square_root
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Getting square root of 0.325484024
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Square root: sqrt(0.325484024) = 0.5705120717
+[2025-11-12 16:31:02] INFO     [app.services.execution_engine] Execution completed - result: 0.5705120717, variables: {'r1': 0.2777485234, 'result1': 0.0342899161, 'r2': 0.325484024, 'result2': 0.5705120717}, random_numbers: [0.2777485234, 0.325484024]
+[2025-11-12 16:31:02] INFO     [app.routes.api] [Request 2c7337f4] Execution completed in 0.014s - final result: 0.5705120717
+[2025-11-12 16:31:02] INFO     [app.routes.api] [Request 2c7337f4] Response sent - result: 0.5705120717, random_numbers: [0.2777485234, 0.325484024], total_duration: 6.406s
+[2025-11-12 16:35:32] INFO     [app.routes.api] [Request 90077854] Request received - prompt: Tell me about google...
+[2025-11-12 16:35:32] INFO     [app.routes.api] [Request 90077854] Starting OpenAI parsing...
+[2025-11-12 16:35:33] INFO     [app.services.openai_service] OpenAI API call completed in 1.661s
+[2025-11-12 16:35:33] ERROR    [app.services.openai_service] JSON decode error: Expecting value: line 1 column 1 (char 0)
+[2025-11-12 16:35:33] ERROR    [app.services.openai_service] Failed to parse content (first 500 chars): Sorry, I can only parse prompts related to random number calculations into a JSON array of operations. Please provide a prompt related to random number calculations.
+[2025-11-12 16:35:33] ERROR    [app.services.openai_service] OpenAI API call failed: Failed to parse JSON from OpenAI response: Expecting value: line 1 column 1 (char 0)
+Response: Sorry, I can only parse prompts related to random number calculations into a JSON array of operations. Please provide a prompt related to random number calculations.
+Traceback (most recent call last):
+  File "C:\Users\91830\OneDrive\Desktop\take_home\rand-o-mania\app\services\openai_service.py", line 91, in parse_prompt_with_openai
+    parsed = json.loads(content)
+  File "C:\Users\91830\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\91830\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\91830\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91830\OneDrive\Desktop\take_home\rand-o-mania\app\services\openai_service.py", line 125, in parse_prompt_with_openai
+    raise ValueError(f"Failed to parse JSON from OpenAI response: {str(e)}\nResponse: {content[:200]}")
+ValueError: Failed to parse JSON from OpenAI response: Expecting value: line 1 column 1 (char 0)
+Response: Sorry, I can only parse prompts related to random number calculations into a JSON array of operations. Please provide a prompt related to random number calculations.
